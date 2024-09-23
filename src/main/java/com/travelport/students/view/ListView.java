@@ -2,11 +2,13 @@ package com.travelport.students.view;
 
 import com.travelport.students.controller.StudentController;
 import com.travelport.students.model.Student;
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ListView extends JFrame {
 
     private final CommonViewUtils commonViewUtils;
@@ -31,7 +33,7 @@ public class ListView extends JFrame {
 
     private void setupView() {
         setTitle("Student List");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setContentPane(contentPane);
         pack();
     }
